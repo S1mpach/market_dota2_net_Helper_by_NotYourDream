@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>s.jpg</file>
+        <file>crm_mission.png</file>
+        <file>1S.png</file>
+        <file>bp.png</file>
+        <file>clear.ico</file>
+        <file>key.png</file>
+        <file>percent.png</file>
+        <file>sell.ico</file>
+        <file>clearlog.png</file>
+        <file>print-flat.png</file>
+        <file>refresh.png</file>
+        <file>tag.png</file>
+        <file>time.png</file>
+        <file>logo.png</file>
+        <file>donation.png</file>
+    </qresource>
+</RCC>

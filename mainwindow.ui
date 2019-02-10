@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>573</width>
+    <height>846</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Market Helper by @notYourDream</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/img/crm_mission.png</normaloff>:/img/crm_mission.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(32, 32, 45);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_GetInventory">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>200</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Получить инвентарь&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Get Inventory</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/bp.png</normaloff>:/img/bp.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_GetPrice">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>350</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Оценить каждую по моментальной продаже&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Get Price Min</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/time.png</normaloff>:/img/time.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonPrintList">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>250</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Вывести список вещей и их стоимост (после получения цены)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string> Print Inventory</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/print-flat.png</normaloff>:/img/print-flat.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSellItem">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>500</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Выставит все твои шмотки&lt;/p&gt;&lt;p&gt;*Посмотреть можно &amp;quot;Print List&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Sell Item</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/sell.ico</normaloff>:/img/sell.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>390</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#FB0B50;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Api-Key</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSetKey">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>140</y>
+      <width>140</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Set Key</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/key.png</normaloff>:/img/key.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>400</y>
+      <width>140</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Оценить каждую шмотку &lt;/p&gt;&lt;p&gt;Формула :&lt;/p&gt;&lt;p&gt;самая дешевая цена - сдц&lt;/p&gt;&lt;p&gt;процент - п&lt;/p&gt;&lt;p&gt;Цена = сдц -  (сдц * п)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Get Price by %</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/percent.png</normaloff>:/img/percent.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>400</y>
+      <width>50</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    top:1px;</string>
+    </property>
+    <property name="maximum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.010000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>600</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Очистит инв&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Clear Inv</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/clear.ico</normaloff>:/img/clear.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditLogPAnel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>199</y>
+      <width>350</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>810</y>
+      <width>170</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Telegram: @notYourDream</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>650</y>
+      <width>180</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/img/s.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>650</y>
+      <width>180</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>550</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Clear log</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/clearlog.png</normaloff>:/img/clearlog.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Telegram">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>810</y>
+      <width>170</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_refresh">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>300</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/refresh.png</normaloff>:/img/refresh.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ByName">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>450</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#ffffff;
+    font-size:13px;
+    padding:9px 27px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string>Get Price By Name</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/tag.png</normaloff>:/img/tag.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>0</y>
+      <width>570</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/logo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>800</y>
+      <width>130</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/donation.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>800</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Items">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>90</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:#20202D;
+    border-radius:9px;
+    border:3px solid #FB0B50;
+    color:#FB0B50;
+    font-size:13px;
+    top:1px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
